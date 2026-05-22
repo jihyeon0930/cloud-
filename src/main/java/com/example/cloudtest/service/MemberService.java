@@ -17,7 +17,8 @@ public class MemberService {
 	private final MemberRepository memberRepository;
 
 	public Member saveMember(MemberRequestDto dto) {
-		log.info("[API - LOG] POST /api/members 요청 - name: {}, age: {], mbti: {}", dto.getName(), dto.getAge(), dto.getMbti());
+		log.info("[API - LOG] POST /api/members 요청 - name: {}, age: {}, mbti: {}"
+			, dto.getName(), dto.getAge(), dto.getMbti());
 
 		Member member = Member.builder()
 			.name(dto.getName())
