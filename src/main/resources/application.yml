@@ -1,11 +1,8 @@
-spring:
-  profiles:
-    active: local
-  config:
-    import: "optional:aws-parameterstore:"
-
 management:
   endpoints:
     web:
       exposure:
         include: health, info
+  info:
+    env:
+      enabled: true
