@@ -22,10 +22,16 @@ public class Member {
 	private int age;
 	private String mbti;
 
+	private String profileImageUrl;
+
 	@Builder
 	public Member(String name, int age, String mbti) {
 		this.name = name;
 		this.age = age;
 		this.mbti = mbti;
+	}
+
+	public void updateProfileImageUrl(String key) {
+		this.profileImageUrl = key;
 	}
 }
