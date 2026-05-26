@@ -20,7 +20,7 @@ public class S3Service {
 
 	private final S3Client s3Client;
 	private final S3Presigner s3Presigner;
-	private final String bucketName = "my-cloudtest-bucket";
+	private final String bucketName = "my-cloudtest-bucket-jihyeon";
 
 	public S3Service() {
 		this.s3Client = S3Client.builder()
